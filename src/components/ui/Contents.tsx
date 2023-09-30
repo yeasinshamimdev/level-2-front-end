@@ -1,10 +1,13 @@
 "use client";
 
 import { Layout } from "antd";
+import UMBreadCrumb from "./UMBreadCrumb";
 
 const { Content } = Layout;
 
 const Contents = ({ children }: { children: React.ReactNode }) => {
+  const base = "admin";
+
   return (
     <Content
       style={{
@@ -12,6 +15,18 @@ const Contents = ({ children }: { children: React.ReactNode }) => {
         color: "black",
       }}
     >
+      <UMBreadCrumb
+        items={[
+          {
+            level: `${base}`,
+            link: `/${base}`,
+          },
+          {
+            level: `student`,
+            link: `/${base}/student`,
+          },
+        ]}
+      />
       {children}
     </Content>
   );
