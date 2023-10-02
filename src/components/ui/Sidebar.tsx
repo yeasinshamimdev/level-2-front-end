@@ -25,6 +25,7 @@ const Sidebar = () => {
         left: 0,
         top: 0,
         bottom: 0,
+        padding: "20px 10px",
       }}
     >
       <div

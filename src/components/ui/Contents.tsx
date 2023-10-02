@@ -2,13 +2,10 @@
 
 import { Layout } from "antd";
 import HeaderPage from "./Header";
-import UMBreadCrumb from "./UMBreadCrumb";
 
 const { Content } = Layout;
 
 const Contents = ({ children }: { children: React.ReactNode }) => {
-  const base = "admin";
-
   return (
     <Content
       style={{
@@ -17,19 +14,13 @@ const Contents = ({ children }: { children: React.ReactNode }) => {
       }}
     >
       <HeaderPage />
-      <UMBreadCrumb
-        items={[
-          {
-            level: `${base}`,
-            link: `/${base}`,
-          },
-          {
-            level: `student`,
-            link: `/${base}/student`,
-          },
-        ]}
-      />
-      {children}
+      <div
+        style={{
+          padding: "10px ",
+        }}
+      >
+        {children}
+      </div>
     </Content>
   );
 };

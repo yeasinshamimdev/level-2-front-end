@@ -1,10 +1,17 @@
 import Error from "@/components/icons/Error";
+import { Row } from "antd";
 
 const NotFound = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+    <Row
+      justify="center"
+      align="middle"
+      style={{
+        height: "100vh",
+      }}
+    >
       <Error />
-    </div>
+    </Row>
   );
 };
 

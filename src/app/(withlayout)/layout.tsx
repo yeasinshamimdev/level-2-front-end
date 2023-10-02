@@ -6,7 +6,7 @@ import { isUserLoggedIn } from "@/services/auth.service";
 import { Layout } from "antd";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { RotatingLines } from "react-loader-spinner";
+import Loading from "../loading";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
@@ -21,25 +21,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   }, [userLoggedIn, router]);
 
   if (!isLoading) {
-    return (
-      <p
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "100%",
-          height: "100vh",
-        }}
-      >
-        <RotatingLines
-          strokeColor="grey"
-          strokeWidth="5"
-          animationDuration="0.75"
-          width="96"
-          visible={true}
-        />
-      </p>
-    );
+    return <Loading />;
   }
 
   return (

@@ -1,18 +1,18 @@
-import Spinner from "@/components/ui/Spinner";
+import { Row, Space, Spin } from "antd";
 
 const Loading = () => {
   return (
-    <div
+    <Row
+      justify="center"
+      align="middle"
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        width: "100%",
         height: "100vh",
       }}
     >
-      <Spinner />
-    </div>
+      <Space>
+        <Spin tip="Loading" size="large"></Spin>
+      </Space>
+    </Row>
   );
 };
 

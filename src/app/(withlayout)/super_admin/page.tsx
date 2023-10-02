@@ -5,7 +5,7 @@ const SuperAdminPage = () => {
         color: "black",
       }}
     >
-      SuperAdminPage
+      <h1>SuperAdmin Page</h1>
     </div>
   );
 };
