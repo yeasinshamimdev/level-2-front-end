@@ -1,13 +1,17 @@
-import { LoadingOutlined } from "@ant-design/icons";
+import Spinner from "@/components/ui/Spinner";
 
 const Loading = () => {
   return (
     <div
       style={{
-        margin: "auto",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        height: "100vh",
       }}
     >
-      <LoadingOutlined size={60} />
+      <Spinner />
     </div>
   );
 };
