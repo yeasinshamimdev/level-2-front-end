@@ -24,7 +24,7 @@ const ManageFaculty = () => {
         }}
       >
         <h1 style={{ marginBottom: "8px" }}>Faculty List</h1>
-        <Link href={`${role}/manage-faculty/create`}>
+        <Link href={`/super_admin/manage-faculty/create`}>
           <Button type="primary">Create Faculty</Button>
         </Link>
       </div>

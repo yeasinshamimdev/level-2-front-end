@@ -24,7 +24,7 @@ const ManageDepartment = () => {
         }}
       >
         <h1 style={{ marginBottom: "8px" }}>Department List</h1>
-        <Link href={`${role}/manage-department/create`}>
+        <Link href={`/super_admin/manage-department/create`}>
           <Button type="primary">Create Department</Button>
         </Link>
       </div>

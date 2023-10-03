@@ -28,7 +28,9 @@ const FormInput = ({
 
   return (
     <>
-      {level ? level : null}
+      <div style={{ marginBottom: "5px", marginTop: "5px" }}>
+        {level ? level : null}
+      </div>
       <Controller
         control={control}
         name={name}

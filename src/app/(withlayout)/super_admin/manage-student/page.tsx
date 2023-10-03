@@ -24,7 +24,7 @@ const ManageStudent = () => {
         }}
       >
         <h1 style={{ marginBottom: "8px" }}>Manage Student</h1>
-        <Link href={`${role}/manage-student/create`}>
+        <Link href={`/super_admin/manage-student/create`}>
           <Button type="primary">Create Student</Button>
         </Link>
       </div>

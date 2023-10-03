@@ -1,5 +1,6 @@
 "use client";
 
+import ActionBar from "@/components/ui/ActionBar";
 import UMBreadCrumb from "@/components/ui/UMBreadCrumb";
 import { getUserInfo } from "@/services/auth.service";
 import { UserInfo } from "@/types";
@@ -23,10 +24,11 @@ const ManageAdmin = () => {
           paddingTop: "10px",
         }}
       >
-        <h1 style={{ marginBottom: "8px" }}>Admin List</h1>
-        <Link href={`${role}/manage-admin/create`}>
-          <Button type="primary">Create Admin</Button>
-        </Link>
+        <ActionBar title="Admin List">
+          <Link href={`/super_admin/manage-admin/create`}>
+            <Button type="primary">Create Admin</Button>
+          </Link>
+        </ActionBar>
       </div>
     </div>
   );
